@@ -8,6 +8,10 @@ import lombok.Data;
 @Table(name = "Users")
 @Data
 public class TodoUser {
+    @Id
+    @Column(name = "user_token")
     String userToken;
+
+    @Column(name = "user_name")
     String userName;
 }
