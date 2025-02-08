@@ -24,9 +24,9 @@ public class Task {
 
     private String description;
 
-    @Column(nullable = false)
+    @Column(name = "create_time", nullable = false)
     private LocalDateTime createTime;
 
-    @Column(nullable = false)
+    @Column(name = "modify_time", nullable = false)
     private LocalDateTime modifyTime;
 }
